@@ -23,10 +23,18 @@ To start, ensure you in the menu of the workbench that contains the items that y
 
 ![](./demo_images/workbench_menu.png)
 
-Open up the terminal inside the repo and run the following command to start up the virtual python environment. 
+To startup the bot, ensure you have `virtualenv` python package installed. If not, you can use pip to install it by typing `pip install virtualenv`. Open up the terminal inside the repo and run the following command to start up the new virtual python environment. 
 
 ```
-.\.venv\Scripts\activate
+python -m virtualenv venv
+```
+And activate the environment by typing
+```
+.\venv\Scripts\activate
+```
+And finally, install the required packages into the virtual environment by typing
+```
+pip install -r requirements.txt
 ```
 
 Start up the python bot by typing
@@ -35,6 +43,7 @@ python main.py
 ```
 
 The following menu should appear in the terminal, select which item you would like to have the bot make and sit back and relax~~
+
 ![](./demo_images/terminal_menu.png)
 
 ### Future work
